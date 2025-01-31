@@ -1,23 +1,18 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Provider } from "react-redux";
-import Menu from "./component/menu/Menu";
-import { AuthPage } from "./Pages/AuthPage/AuthPage";
-import {HomePage} from "./Pages/HomePage/HomePage.tsx";
-import {RecipesPage} from "./Pages/RecipesPage/RecipesPage.tsx";
+import { FC, useEffect } from 'react';
+import { RouterProvider } from 'react-router-dom';
 
-const App = () => {
-  return (
-      <Provider store={store}>
-        <Router>
-          <Menu />
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/auth" element={<AuthPage />} />
-            <Route path="/recipes" element={<RecipesPage />} />
-          </Routes>
-        </Router>
-      </Provider>
-  );
+import { initialize } from './redux/slices/account';
+import { useAppDispatch } from './redux/store';
+import { router } from './route';
+
+export const App: FC = () => {
+    const dispatch = useAppDispatch();
+
+    useEffect(() => {
+        dispatch(initialize());
+    }, [dispatch]);
+
+    return (
+        <RouterProvider router={router} />
+    );
 };
-
-export default App;

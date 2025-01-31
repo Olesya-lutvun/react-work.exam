@@ -1,0 +1,28 @@
+.list-view {
+    margin: 16px 0;
+    padding: 8px;
+    position: relative;
+}
+
+.list-view__search {
+    margin-bottom: 16px;
+}
+
+.list-view__items {
+    margin-bottom: 16px;
+}
+
+.list-view__error {
+    color: red;
+}
+
+.list-view__navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.list-view__search > button,
+.list-view__navigation > button:not(:first-of-type) {
+    margin-left: 16px;
+}

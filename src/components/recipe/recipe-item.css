@@ -1,0 +1,34 @@
+.recipe-item {
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+
+    cursor: pointer;
+}
+
+.recipe-item.with-border {
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.recipe-item:not(:first-of-type) {
+    margin-top: 16px;
+}
+
+.recipe-item__logo {
+    width: 64px;
+    height: 64px;
+}
+
+.recipe-item__details {
+    margin-left: 16px;
+}
+
+.recipe-item__details > span {
+    display: block;
+}
+
+.recipe-item__details > span:first-of-type {
+    margin-bottom: 8px;
+    font-size: 18px;
+}
