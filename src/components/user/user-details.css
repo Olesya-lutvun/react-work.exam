@@ -1,0 +1,27 @@
+.user-details {
+    display: flex;
+    flex-direction: row;
+}
+
+.user-details__logo {
+    width: 128px;
+    height: 128px;
+}
+
+.user-details__information {
+    margin-left: 16px;
+    flex: 1 1 0;
+}
+
+.user-details__information > span {
+    display: block;
+}
+
+.user-details__information > span:not(:first-of-type) {
+    margin-top: 4px;
+}
+
+.user-details__information > span:first-of-type {
+    margin-bottom: 8px;
+    font-size: 18px;
+}

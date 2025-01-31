@@ -1,0 +1,31 @@
+.recipe-details {
+    display: flex;
+    flex-direction: row;
+}
+
+.recipe-details__logo {
+    width: 128px;
+    height: 128px;
+}
+
+.recipe-details__information {
+    margin-left: 16px;
+    flex: 1 1 0;
+}
+
+.recipe-details__information > span {
+    display: block;
+}
+
+.recipe-details__information > span:not(:first-of-type) {
+    margin-top: 4px;
+}
+
+.recipe-details__information > span:first-of-type {
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.recipe-details__tag:not(:first-of-type) {
+    margin-left: 8px;
+}

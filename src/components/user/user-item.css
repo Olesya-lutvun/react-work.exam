@@ -1,0 +1,34 @@
+.user-item {
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+
+    cursor: pointer;
+}
+
+.user-item.with-border {
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.user-item:not(:first-of-type) {
+    margin-top: 16px;
+}
+
+.user-item__logo {
+    width: 64px;
+    height: 64px;
+}
+
+.user-item__details {
+    margin-left: 16px;
+}
+
+.user-item__details > span {
+    display: block;
+}
+
+.user-item__details > span:first-of-type {
+    margin-bottom: 8px;
+    font-size: 18px;
+}

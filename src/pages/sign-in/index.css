@@ -1,0 +1,27 @@
+.sign-in-page {
+
+}
+
+.sign-in-page form {
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.sign-in-page input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.sign-in-page .sign-in-page__input:not(:first-of-type) {
+    margin-top: 16px;
+}
+
+.sign-in-page button {
+    display: block;
+    margin-top: 16px;
+    margin-left: auto;
+}
+
+.sign-in-page__input-error {
+    color: red;
+}
