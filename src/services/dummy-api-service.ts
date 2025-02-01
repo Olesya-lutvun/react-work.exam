@@ -32,27 +32,8 @@ class DummyApiService {
             refreshToken: undefined as any as string,
         };
 
-        // Notes: here we have CORS issue, so just let's simulate
         return mockResponse;
-        /*
-        const response = await fetch(`${baseUrl}/auth/login`, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-                username: username,
-                password: password,
-                expiresInMins: 120,
-            }),
-            credentials: 'include',
-        });
 
-        const result: ISignInResponse = await response.json();
-
-        this.accessToken = result.accessToken;
-        this.refreshToken = result.refreshToken;
-
-        return result;
-        */
     };
 
     public getAccountInformation = async (): Promise<IAccountModel> => {

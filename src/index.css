@@ -1,0 +1,56 @@
+/*@import 'tailwindcss';
+*/
+
+* {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+/* Like MUI */
+
+/* Input */
+.input-mui {
+  padding: 10px 14px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input-mui:focus {
+  border-color: #1976d2;
+  box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.2);
+}
+
+/* Button */
+.btn-mui {
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #1976d2; /* MUI primary color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.btn-mui:hover {
+  background-color: #1565c0;
+}
+
+.btn-mui:active {
+  background-color: #0d47a1;
+}
+
+.btn-mui:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.3);
+}
+
+.btn-mui:disabled {
+  background-color: #bdbdbd;
+  cursor: default;
+}
